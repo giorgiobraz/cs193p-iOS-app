@@ -62,7 +62,7 @@ struct ContentView: View {
 
 struct CardView: View {
     var content: String
-    @State var isFaceUp: Bool = true
+    @State var isFaceUp: Bool = false
     
     // Nossa peça de LEGO que representa um Card da UI
     var body: some View {
@@ -84,16 +84,11 @@ struct CardView: View {
 
 
 
-
-
-
 // VISUALIZE OUR DEVICES
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.dark)
-.previewInterfaceOrientation(.portraitUpsideDown)
-        ContentView()
             .preferredColorScheme(.light)
+.previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
